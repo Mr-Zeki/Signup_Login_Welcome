@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backGrndcolor"
+        tools:context=".LoginPage">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/baseline_account_circle_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/newUsertxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Kullanıcı Adı"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <EditText
+            android:id="@+id/newUserinputid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/color_corner"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/newUsertxt"
+            app:layout_constraintStart_toStartOf="@+id/newUsertxt"
+            app:layout_constraintTop_toBottomOf="@+id/newUsertxt" />
+
+        <TextView
+            android:id="@+id/newUserpwtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Şifre"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/newUserinputid"
+            app:layout_constraintStart_toStartOf="@+id/newUserinputid"
+            app:layout_constraintTop_toBottomOf="@+id/newUserinputid" />
+
+        <EditText
+            android:id="@+id/newUserinputpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/color_corner"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/newUserpwtxt"
+            app:layout_constraintStart_toStartOf="@+id/newUserpwtxt"
+            app:layout_constraintTop_toBottomOf="@+id/newUserpwtxt" />
+        <TextView
+            android:id="@+id/pwagaintxt"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Şifre Tekrar"
+            app:layout_constraintEnd_toEndOf="@+id/newUserinputpw"
+            app:layout_constraintStart_toStartOf="@+id/newUserinputpw"
+            app:layout_constraintTop_toBottomOf="@+id/newUserinputpw" />
+
+        <EditText
+            android:id="@+id/newPwagain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/color_corner"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/pwagaintxt"
+            app:layout_constraintStart_toStartOf="@+id/pwagaintxt"
+            app:layout_constraintTop_toBottomOf="@+id/pwagaintxt" />
+
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@color/backGrndcolor"
+            android:shadowColor="@color/black"
+            android:text="Kayıt Oluştur"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/newPwagain"
+            app:layout_constraintStart_toStartOf="@+id/newPwagain"
+            app:layout_constraintTop_toBottomOf="@+id/newPwagain" />
+
+        <Button
+            android:id="@+id/loginscreenbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:background="@color/backGrndcolor"
+            android:layout_marginTop="32dp"
+            android:shadowColor="@color/black"
+            android:text="Giriş Ekranına Dön"
+            app:layout_constraintEnd_toEndOf="@+id/signupbtn"
+            app:layout_constraintStart_toStartOf="@+id/signupbtn"
+            app:layout_constraintTop_toBottomOf="@+id/signupbtn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
